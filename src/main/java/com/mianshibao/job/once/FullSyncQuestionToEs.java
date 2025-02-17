@@ -7,14 +7,19 @@ import com.mianshibao.model.entity.Question;
 import com.mianshibao.service.QuestionService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.util.List;
 import java.util.stream.Collectors;
 
 
-@Component
+/**
+ * 全量同步帖子到 es
+ *
+
+ */
+// todo 取消注释开启任务
+//@Component
 @Slf4j
 public class FullSyncQuestionToEs implements CommandLineRunner {
 
